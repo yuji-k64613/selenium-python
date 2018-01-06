@@ -29,6 +29,7 @@ Selenium with Python
    page-objects
    api
    faq
+   tutorial
 
 
 Indices and tables
