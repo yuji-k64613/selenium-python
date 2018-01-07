@@ -94,16 +94,16 @@ Guest(CentOS) :
 
   sudo yum install -y java firefox
 
-Runing Selenium server
-~~~~~~~~~~~~~~~~~~~~~~
+Running Selenium server
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Guest(CentOS) :
 ::
 
   java -jar selenium-server-standalone-3.6.0.jar
 
-Runing XServer(XQuartz)
-~~~~~~~~~~~~~~~~~~~~~~~
+Running XServer(XQuartz)
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Host(macOS) :
 
@@ -145,8 +145,8 @@ Guest(CentOS) :
   driver.close()
   EOF
 
-Runing Selenium with Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running Selenium with Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Guest(CentOS) :
 ::
