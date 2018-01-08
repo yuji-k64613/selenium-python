@@ -1,13 +1,19 @@
 .. _Tutorial:
 
-Appendix: Tutorial
+Appendix: Tutorial(Using macOS and VirtualBox)
 ------------------
 
 Overview
 ~~~~~~~~
 
-This is the procedure of "Getting Started" using Mac and VirtualBox.
-If you execute it according to the procedure, "Selenium with Python" will execute.
+This is the procedure of "Getting Started" using macOS and VirtualBox.
+You can execute Selenium with Python after you follow this procedure.
+
+- You install CentOS in VirtualBox on macOS.
+- You install Selenium and Firefox on CentOS.
+- You write Python Script for Selenium.
+- You run Selenium on CentOS.
+- Firefox's window is run on macOS by XServer(XQuartz).
 
 The required software is below:
 
@@ -40,7 +46,7 @@ Host(macOS) :
 
 Guest(CentOS) :
 
-Disable selinux
+Disable SELinux
 ::
 
   sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
@@ -107,8 +113,8 @@ Running XServer(XQuartz)
 
 Host(macOS) :
 
-When you start up the XServer(XQuartz), the terminal open,
-You type the following command at the terminal:
+When you run XServer(XQuartz) on macOS, xterm is opened.
+You execute the following command in xterm:
 
 ::
 
@@ -157,6 +163,4 @@ Guest(CentOS) :
 
   python python_org_search.py
 
-After firefox starts up, "http://www.python.org" will be opened.
-After that, if firefox finished, it works normally.
-
+Firefox will be run, open http://www.python.org and exit. If Firefox isn't run, there are some problems.
